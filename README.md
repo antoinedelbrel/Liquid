@@ -1,1 +1,51 @@
-# leakid
+# Appli Leakid
+
+# Cahier des charges 
+
+## Tables :
+* Guest :  
+    * id  
+    * name  
+    * created_at  
+    * updated_at  
+
+* Expences :  
+    * id  
+    * name  
+    * price  
+    * user_id  
+    * created_at  
+    * updated_at  
+
+* Event :  
+    * id  
+    * name  
+    * date  
+    * created_at  
+    * updated_at  
+
+* Guest_Event :   
+    * id_guest  
+    * id_event  
+
+## Commandes utiliser 
+Installation de laravel avec composer
+* `laravel new` 
+* `npm install`  
+* `php artisan make:model Guest -rmc`
+* `php artisan migrate` 
+* `php artisan serve`
+
+## Reflexion  
+Projet d'application qui récapitule qui apporte quoi à un évenement, pour avoir le total de dépenses, le total de nourritures, de boissons...  
+Reflexion sur le nom de l'application.  
+ 
+
+## Partie dev
+
+* Création de chaque page Model View Controller (MVC)
+
+
+## Partie design 
+
+* Design de la page d'accueil

@@ -14,7 +14,9 @@ class GuestController extends Controller
      */
     public function index()
     {
-        //
+        $guests = Guest::all();
+
+        return view('guests.index', compact('guests'));
     }
 
     /**
@@ -24,7 +26,7 @@ class GuestController extends Controller
      */
     public function create()
     {
-        //
+        return view('guests.create');
     }
 
     /**
@@ -46,7 +48,7 @@ class GuestController extends Controller
      */
     public function show(Guest $guest)
     {
-        //
+        return view('guests.show',compact('guests'));
     }
 
     /**
@@ -57,7 +59,7 @@ class GuestController extends Controller
      */
     public function edit(Guest $guest)
     {
-        //
+        return view('guests.edit',compact('guests'));
     }
 
     /**
