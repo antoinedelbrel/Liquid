@@ -80,7 +80,7 @@ class GuestController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required'
+            'email' => 'required',
         ]);
         Guest::updated($request->all());
 
