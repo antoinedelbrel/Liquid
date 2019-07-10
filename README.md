@@ -40,7 +40,8 @@ Installation de laravel avec composer
 
 ## Reflexion  
 Projet d'application qui récapitule qui apporte quoi à un évenement, pour avoir le total de dépenses, le total de nourritures, de boissons...  
-Reflexion sur le nom de l'application.  
+Reflexion sur le nom de l'application.
+Differend nom proposé : LeakId, Liquid.  
  
 
 ## Partie dev
@@ -50,4 +51,6 @@ Reflexion sur le nom de l'application.
 
 ## Partie design 
 
+* Ajout du logo. 
+* Ajout de la couleur de font.
 * Design de la page d'accueil.
