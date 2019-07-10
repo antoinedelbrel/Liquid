@@ -37,7 +37,14 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+        ]);
+        Guest::create($request->all());
+
+        return redirect()->route('guests.index')
+                        ->with('success','Guest created successfully');
     }
 
     /**
@@ -71,7 +78,14 @@ class GuestController extends Controller
      */
     public function update(Request $request, Guest $guest)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required'
+        ]);
+        Guest::updated($request->all());
+
+        return redirect()->route('guests.index')
+                        ->with('success','Guest updated successfully');
     }
 
     /**
@@ -82,6 +96,9 @@ class GuestController extends Controller
      */
     public function destroy(Guest $guest)
     {
-        //
+        $guest->delete();
+
+        return redirect()->route('guests.index')
+                        ->with('success','Guest delete successfully');
     }
 }

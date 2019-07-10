@@ -6,6 +6,7 @@
 * Guest :  
     * id  
     * name  
+    * email
     * created_at  
     * updated_at  
 
@@ -43,9 +44,9 @@ Reflexion sur le nom de l'application.
 
 ## Partie dev
 
-* Création de chaque page Model View Controller (MVC)
+* Création de chaque page Model View Controller (MVC).
 
 
 ## Partie design 
 
-* Design de la page d'accueil
+* Design de la page d'accueil.
