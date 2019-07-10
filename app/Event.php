@@ -4,10 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Guest extends Model
+class Event extends Model
 {
     protected $fillable = [
-        'name', 'email'
+        'name', 'slug', 'date'
     ];
-    
 }

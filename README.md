@@ -21,6 +21,7 @@
 * Event :  
     * id  
     * name  
+    * slug
     * date  
     * created_at  
     * updated_at  

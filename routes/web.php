@@ -11,6 +11,7 @@
 |
 */
 Route::resource('guests','GuestController');
+Route::resource('event','EventController');
 Route::get('/', function () {
     return view('welcome');
 });
