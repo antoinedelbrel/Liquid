@@ -46,7 +46,7 @@ Differend nom proposé : LeakId, Liquid.
 
 ## Partie dev
 
-* Création de chaque page Model View Controller (MVC).
+* Création de chaque page Model View Controller (MVC) pour toutes les tables.
 
 
 ## Partie design 

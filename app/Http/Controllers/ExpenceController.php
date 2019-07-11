@@ -27,7 +27,8 @@ class ExpenceController extends Controller
      */
     public function create()
     {
-        return view('expences.create');
+        $guests = Guest::all();
+        return view('expences.create', compact('guests'));
     }
 
     /**
