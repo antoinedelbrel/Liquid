@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Guest;
 use Illuminate\Http\Request;
+use App\Expence;
 
 class GuestController extends Controller
 {

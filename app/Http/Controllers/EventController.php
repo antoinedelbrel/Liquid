@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class EventController extends Controller
 {
@@ -37,12 +38,15 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+
+        $event = $request->validate([
             'name' => 'required',
             
             'date' => 'required',
         ]);
-        Event::create($request->all());
+        $event['slug'] = Str::slug($request->name, '-');
+        // dd($request->slug);
+        Event::create($event);
 
         return redirect()->route('events.index')
                         ->with('success', 'Event created successfully');

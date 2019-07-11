@@ -9,5 +9,7 @@ class Guest extends Model
     protected $fillable = [
         'name', 'email'
     ];
-    
+    public function expences(){
+        return $this->hasMany('App\Expence');
+    }
 }
