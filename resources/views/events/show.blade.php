@@ -17,6 +17,7 @@
                 <p>{{ $event->id }}</p>
                 <p>{{ $event->name }}</p>
                 <p>{{ $event->date }}</p>
+                
             </div>
         </div>
         

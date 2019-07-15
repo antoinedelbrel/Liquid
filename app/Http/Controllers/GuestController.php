@@ -6,6 +6,7 @@ use App\Guest;
 use Illuminate\Http\Request;
 use App\Event;
 use App\Expence;
+use App\Guest_Event;
 
 class GuestController extends Controller
 {

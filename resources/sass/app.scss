@@ -8,18 +8,23 @@
 @import '~bootstrap/scss/bootstrap';
 
 
+h1{
+    text-align:left;
+    flex:1;
+}
 #nav{
     text-align:right;
     word-spacing: 30px;
     padding:0;
     margin:0;
-    display:inline;
+    display:inline-flex;
 }
 #nav li{
     text-align:center;
     display:inline;
     list-style:none;
     font-size:30px;
+    flex:2;
 } 
 .lien{
     text-decoration:none;

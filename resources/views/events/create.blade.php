@@ -39,6 +39,18 @@
                 <input type="text" id="date" name="date" class="form-control" placeholder="Date">
             </div>
         </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <label for="guests">Guests:</label>
+                <select name="guest" id="guest">
+                    @foreach ($guests as $guest)
+                    <option value="{{ $guest->id }}">{{ $guest->name }}</option>
+                    @endforeach 
+                </select>
+            </div>
+        </div>
+        
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
         </div>

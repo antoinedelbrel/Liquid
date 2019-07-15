@@ -6,6 +6,7 @@ use App\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Guest;
+use App\Guest_Event;
 
 class EventController extends Controller
 {
@@ -48,7 +49,10 @@ class EventController extends Controller
         ]);
         $event['slug'] = Str::slug($request->name, '-');
         // dd($request->slug);
-        Event::create($event);
+        $newEvent = Event::create($event);
+        //dd($newEvent);
+        $guests = Guest::find($request->guest);
+        $newEvent->guests()->attach($guests);
 
         return redirect()->route('events.index')
                         ->with('success', 'Event created successfully');
