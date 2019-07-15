@@ -35,6 +35,9 @@ Installation de laravel avec composer
 * `laravel new` 
 * `npm install`  
 * `php artisan make:model Guest -rmc`
+* `php artisan make:model Event -rmc`
+* `php artisan make:model Expence -rmc`
+* `php artisan make:model Guest_Event -rmc`
 * `php artisan migrate` 
 * `php artisan serve`
 

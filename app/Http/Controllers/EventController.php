@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use App\Guest;
 
 class EventController extends Controller
 {
@@ -27,7 +28,8 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('events.create');
+        $guests = Guest::all();
+        return view('events.create', compact('guests'));
     }
 
     /**

@@ -27,7 +27,7 @@
             <th>Guest id</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($expences as $client)  
+        @foreach ($expences as $expence)  
         <tr>
             <td>{{ $expence->id }}</td>
             <td>{{ $expence->name }}</td>

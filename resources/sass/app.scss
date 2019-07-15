@@ -6,3 +6,25 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+#nav{
+    text-align:right;
+    word-spacing: 30px;
+    padding:0;
+    margin:0;
+    display:inline;
+}
+#nav li{
+    text-align:center;
+    display:inline;
+    list-style:none;
+    font-size:30px;
+} 
+.lien{
+    text-decoration:none;
+    color:black;
+}
+.container{
+    padding-top:50px;
+}
