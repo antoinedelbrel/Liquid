@@ -17,7 +17,7 @@
     
         
         <div id="nav">
-            <h1>LIQUID</h1>
+            
             <nav>
                 <ul>
                     <li><a class="lien" href="profil.php">Profil</a></li>
@@ -25,7 +25,7 @@
                     <li><a class="lien" href="contact.php">Contact</a></li>
                 </ul>
             </nav>
-    </div>
+        </div>
 
        
         

@@ -8,10 +8,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 
-h1{
-    text-align:left;
-    flex:1;
-}
+
 #nav{
     text-align:right;
     word-spacing: 30px;
@@ -24,11 +21,11 @@ h1{
     display:inline;
     list-style:none;
     font-size:30px;
-    flex:2;
 } 
 .lien{
     text-decoration:none;
     color:black;
+    flex:2;
 }
 .container{
     padding-top:50px;

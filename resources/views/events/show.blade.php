@@ -17,14 +17,24 @@
                 <p>{{ $event->id }}</p>
                 <p>{{ $event->name }}</p>
                 <p>{{ $event->date }}</p>
-                
+                <!-- <p>{{ $event->guest }}</p> -->
             </div>
-        </div>
-        
-       
-                
-                
-          
-            
+        </div>            
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <table class="table table-striped custab" id="tableau">
+                    <tbody>
+                        @foreach ($event->guests as $guest)
+                        <tr>
+                            <td>{{ $guest->name }}</td>
+                            
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>            
     </div>
 @endsection

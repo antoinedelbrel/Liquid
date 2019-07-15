@@ -46,6 +46,7 @@ class EventController extends Controller
             'name' => 'required',
             
             'date' => 'required',
+            
         ]);
         $event['slug'] = Str::slug($request->name, '-');
         // dd($request->slug);
@@ -93,6 +94,7 @@ class EventController extends Controller
             'name' => 'required',
             
             'date' => 'required',   
+            
         ]);
         Event::updated($request->all());
 
