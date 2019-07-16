@@ -11,22 +11,32 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        
         <title>LIQUID</title>
     </head>
     <body>
+    
         <div id="header">
-            <h1><a class="titre" href="events">Liquid</a></h1>
-                <div id="nav">
+            <div class="container">
+                <nav>
+                    <div id="logo_container">
+
+                        <a href="events"><img class="logo" src="{{ asset('images/logo.png') }}" alt="logo"></a> 
+                    </div>
                     
-                    <nav>
+                    <div id="menu">
+                        
+                        
                         <ul>
                             
                             <li><a class="lien" href="">Login</a></li>
                             <li><a class="lien" href="">Sign-up</a></li>
                             <li><a class="lien" href="contact.php">Contact</a></li>
                         </ul>
-                    </nav>
-                </div>
+                        
+                    </div>
+                </nav>
+            </div>
         </div>
         <hr>
         
@@ -34,14 +44,14 @@
         
         @yield('content')
         </div>
-        <hr>
+        
         <div id="footer">
             <h3>Follow me</h3>
             <div class="reseaux">
-                <a class="network" href="">facebook</a>
-                <a class="network" href="">twitter</a>
-                <a class="network" href="">linkedin</a>
-                <a class="network" href="">github</a>
+                <a class="network" href="https://www.facebook.com/antoine.delbrel">facebook</a>
+                <a class="network" href="https://twitter.com/AntoineDelbrel">twitter</a>
+                <a class="network" href="https://www.linkedin.com/in/antoine-delbrel-48621b181/">linkedin</a>
+                <a class="network" href="https://github.com/antoinedelbrel/leakid">github</a>
             </div>
         </div>
 

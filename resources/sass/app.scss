@@ -14,41 +14,39 @@ body{
     margin-top:auto;
     margin-bottom:auto;
 }
-.titre{
-    text-decoration: none;
-    color:black;
-}
-#header{
+nav{
     display:flex;
-    justify-content:space-between;
+    display:inline;
+    justify-content:space-between;    
 }
-#nav{
-    
-    text-align: center;
+#menu{
+    text-align:center;
     float:right;
-    word-spacing: 30px;
+    word-spacing:30px;
     padding:0;
     margin:0;
 }
-#nav li{
-    
+#menu li{
     display:inline;
     list-style:none;
-    font-size:30px;
 } 
 .lien{
     text-decoration:none;
     color:black;
-    
+}
+.lien:hover{
+    color:rgb(9, 32, 134)
 }
 .container{
     padding-top:30px;
 }
 #footer{
     padding-top:30px;
+    background-image:url(./rectangle.png);
 }
 h3{
     text-align:center;
+    color:white;
 }
 .reseaux{
     padding-top: 10px;
@@ -57,6 +55,6 @@ h3{
 }
 .network{
     text-decoration: none;
-    color:black;
+    color:white;
     list-style: none;
 }

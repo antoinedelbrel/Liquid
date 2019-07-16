@@ -10651,17 +10651,13 @@ body {
   margin-bottom: auto;
 }
 
-.titre {
-  text-decoration: none;
-  color: black;
-}
-
-#header {
+nav {
   display: flex;
+  display: inline;
   justify-content: space-between;
 }
 
-#nav {
+#menu {
   text-align: center;
   float: right;
   word-spacing: 30px;
@@ -10669,15 +10665,18 @@ body {
   margin: 0;
 }
 
-#nav li {
+#menu li {
   display: inline;
   list-style: none;
-  font-size: 30px;
 }
 
 .lien {
   text-decoration: none;
   color: black;
+}
+
+.lien:hover {
+  color: #092086;
 }
 
 .container {
@@ -10686,10 +10685,12 @@ body {
 
 #footer {
   padding-top: 30px;
+  background-image: url(/images/rectangle.png?a835c2274e4100806b93b32dafcd5ae5);
 }
 
 h3 {
   text-align: center;
+  color: white;
 }
 
 .reseaux {
@@ -10700,7 +10701,7 @@ h3 {
 
 .network {
   text-decoration: none;
-  color: black;
+  color: white;
   list-style: none;
 }
 
