@@ -10649,11 +10649,10 @@ a.text-dark:focus {
   word-spacing: 30px;
   padding: 0;
   margin: 0;
-  display: inline-flex;
+  display: inline;
 }
 
 #nav li {
-  text-align: center;
   display: inline;
   list-style: none;
   font-size: 30px;
@@ -10662,7 +10661,6 @@ a.text-dark:focus {
 .lien {
   text-decoration: none;
   color: black;
-  flex: 2;
 }
 
 .container {

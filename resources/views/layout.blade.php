@@ -15,13 +15,14 @@
     </head>
     <body>
     
-        
+    <h1>Liquid</h1>
         <div id="nav">
             
             <nav>
                 <ul>
                     <li><a class="lien" href="profil.php">Profil</a></li>
-                    
+                    <li><a class="lien" href="">Login</a></li>
+                    <li><a class="lien" href="">Sign-up</a></li>
                     <li><a class="lien" href="contact.php">Contact</a></li>
                 </ul>
             </nav>
@@ -33,6 +34,8 @@
         
         @yield('content')
         </div>
+
+        
         <script src="{{ asset('js/app.js') }}" defer ></script>
 
     </body>

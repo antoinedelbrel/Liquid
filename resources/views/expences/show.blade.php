@@ -18,6 +18,5 @@
                 <p>{{ $expence->price }}</p>
             </div>
         </div>
-        
     </div>
 @endsection

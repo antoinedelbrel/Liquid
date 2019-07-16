@@ -40,6 +40,7 @@ Installation de laravel avec composer
 * `php artisan make:model Guest_Event -rmc`
 * `php artisan migrate` 
 * `php artisan serve`
+* `npm run watch`
 
 ## Reflexion  
 Projet d'application qui récapitule qui apporte quoi à un évenement, pour avoir le total de dépenses, le total de nourritures, de boissons...  

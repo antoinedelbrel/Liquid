@@ -17,10 +17,42 @@
                 <p>{{ $guest->name }}</p>
                 <p>{{ $guest->email }}</p>
             </div>
-        </div>
-        
-                
-          
-            
+        </div>     
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <table class="table table-striped custab" id="tableau">
+                    <tbody>
+                    @foreach ($guest->expences as $expence)
+                        <tr>
+                            <td>
+                            {{ $expence->name }}
+                            {{ $expence->price }}
+                            </td>
+                        </tr>
+                    </tbody>
+                    @endforeach
+                </table>
+            </div>
+        </div>     
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <table class="table table-striped custab" id="tableau">
+                    <tbody>
+                    @foreach ($guest->events as $event)
+                        <tr>
+                            <td>
+                            {{ $event->name }}
+                            {{ $event->date }}
+                            </td>
+                        </tr>
+                    </tbody>
+                    @endforeach
+                </table>
+            </div>
+        </div>     
     </div>
 @endsection

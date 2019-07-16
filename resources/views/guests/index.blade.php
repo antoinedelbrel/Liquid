@@ -48,5 +48,6 @@
         @endforeach
     </table>
   
+    <a class="btn btn-info" href="expences">Add expences</a>
       
 @endsection

@@ -47,6 +47,7 @@
         </tr>
         @endforeach
     </table>
-  
+    
+    <a class="btn btn-info" href="guests">Add guest</a>
       
 @endsection
