@@ -14,28 +14,37 @@
         <title>LIQUID</title>
     </head>
     <body>
-    
-    <h1>Liquid</h1>
-        <div id="nav">
-            
-            <nav>
-                <ul>
-                    <li><a class="lien" href="profil.php">Profil</a></li>
-                    <li><a class="lien" href="">Login</a></li>
-                    <li><a class="lien" href="">Sign-up</a></li>
-                    <li><a class="lien" href="contact.php">Contact</a></li>
-                </ul>
-            </nav>
+        <div id="header">
+            <h1><a class="titre" href="events">Liquid</a></h1>
+                <div id="nav">
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li><a class="lien" href="">Login</a></li>
+                            <li><a class="lien" href="">Sign-up</a></li>
+                            <li><a class="lien" href="contact.php">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
         </div>
-
-       
+        <hr>
         
         <div class="container">
         
         @yield('content')
         </div>
+        <hr>
+        <div id="footer">
+            <h3>Follow me</h3>
+            <div class="reseaux">
+                <a class="network" href="">facebook</a>
+                <a class="network" href="">twitter</a>
+                <a class="network" href="">linkedin</a>
+                <a class="network" href="">github</a>
+            </div>
+        </div>
 
-        
         <script src="{{ asset('js/app.js') }}" defer ></script>
 
     </body>

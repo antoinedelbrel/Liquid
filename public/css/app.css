@@ -10644,12 +10644,29 @@ a.text-dark:focus {
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.titre {
+  text-decoration: none;
+  color: black;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
 #nav {
-  text-align: right;
+  text-align: center;
+  float: right;
   word-spacing: 30px;
   padding: 0;
   margin: 0;
-  display: inline;
 }
 
 #nav li {
@@ -10664,6 +10681,26 @@ a.text-dark:focus {
 }
 
 .container {
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+#footer {
+  padding-top: 30px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.reseaux {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.network {
+  text-decoration: none;
+  color: black;
+  list-style: none;
 }
 
