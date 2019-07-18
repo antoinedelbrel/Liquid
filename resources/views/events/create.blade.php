@@ -43,14 +43,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="guests">Guests:</label>
-                <select name="guest" id="guest"> 
+                <!-- <select name="guest" id="guest">  -->
                     @foreach ($guests as $guest)
-                    <option value="{{ $guest->id }}">{{ $guest->name }}</option>
+                    <!-- <option value="{{ $guest->id }}">{{ $guest->name }}</option> -->
                     
-                    <!-- <input type="checkbox" name="guest" id="case" checked="checked" > -->
-                    <!-- <label for="guest" value="{{ $guest->id }}">{{ $guest->name }}</label> -->
+                    <input type="checkbox" value="{{ $guest->id }}" name="guest[]" id="case" checked="checked" > 
+                    <label for="guest">{{ $guest->name }}</label> 
                     @endforeach 
-                </select> 
+                <!-- </select>  -->
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

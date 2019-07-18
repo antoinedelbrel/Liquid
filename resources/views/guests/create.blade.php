@@ -39,6 +39,19 @@
                 <input type="text" id="email" name="email" class="form-control" placeholder="Email">
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <label for="events">Events:</label>
+                <!-- <select name="guest" id="guest">  -->
+                    @foreach ($events as $event)
+                    <!-- <option value="{{ $guest->id }}">{{ $guest->name }}</option> -->
+                    
+                    <input type="checkbox" value="{{ $event->id }}" name="event[]" id="case" checked="checked" > 
+                    <label for="event">{{ $event->name }}</label> 
+                    @endforeach 
+                <!-- </select>  -->
+            </div>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
         </div>

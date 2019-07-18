@@ -7,7 +7,7 @@
 // Bootstrap
 
 
-
+// layout
 body{
     margin:0;
     padding:0;
@@ -16,7 +16,6 @@ body{
     border-bottom:1px solid #ccc;
     // background-color: #8da4e2;
     box-shadow: 0px 0px 14px 0px rgba(184, 131, 124, 0.4);
-    
 }
 nav{
     display:flex;
@@ -26,14 +25,14 @@ nav{
 }
 
 .logo{
-    width:50%;
+    width:40%;
 }
 
 #menu ul{
-    display: flex;
-    margin: 0;
-    
+    display:flex;
+    margin:0;
 }
+
 li{
     position:relative;
     list-style:none;
@@ -65,10 +64,12 @@ li{
     left:0;
 }
 #content{
-    padding-top: 50px;
+    padding: 50px 0;
 }
+
 #footer{
-    padding-top:30px;
+    
+    padding:30px 0;
     background-image:url(./rectangle.png);
 }
 h3{
@@ -76,12 +77,59 @@ h3{
     color:white;
 }
 .reseaux{
+    
     padding-top: 10px;
+    
+}
+.reseaux ul{
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+}
+.reseaux li{ 
+    position:relative;
+    display: inline-block;
+}
+
+.network:hover{
+    text-decoration:none;
+    color:white;
+}
+.network:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom:0;
+    content: "";
+    display:block;
+    height: 2px;
+    left:50%;
+    position:absolute;
+    background: rgb(255, 255, 255);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width:0;
+}
+.network:hover:after{
+    width:100%;
+    left:0;
 }
 .network{
     text-decoration: none;
     color:white;
     list-style: none;
+}
+
+.btn-info{
+    background-color: #1C1A4C;
+}
+.btn-primary{
+    background-color: #462372;
+}
+.btn-danger{
+    background-color: #910949;
+}
+// Page contact
+#back{
+    
+}
+.contact{
+    padding-top: 100px ;
+       
 }

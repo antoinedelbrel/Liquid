@@ -41,6 +41,7 @@ Installation de laravel avec composer
 * `php artisan migrate` Apres avoir modifié la migration de chaque table on actualise pour que les champs apparaissent sur phpMyAdmin.
 * `php artisan serve` On lance laravel pour pouvoir voir notre page web.
 * `npm run watch` Cette commande permet d'actualiser à chaque fois que du css où du javascript est changé pour voir la différence sur la page web.
+* `php artisan make:controller ContactController` On crée le controller de la page contact.
 
 ## Reflexion  
 Projet d'application qui récapitule qui apporte quoi à un évenement, pour avoir le total de dépenses, le total de nourritures, de boissons...  

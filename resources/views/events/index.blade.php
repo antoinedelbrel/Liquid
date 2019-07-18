@@ -2,7 +2,7 @@
  
 @section('content')
     <div class="row">
-        <div class="col-lg-12 margin-tb">
+        <div class="col-lg-12 margin-tb d-flex justify-content-between mb-2">
             <div class="pull-left">
                 <h2>Events</h2>
             </div>
@@ -49,5 +49,7 @@
     </table>
     
     <a class="btn btn-info" href="guests">Add guest</a>
+    <a class="btn btn-info" href="expences">Add expences</a>
+
       
 @endsection

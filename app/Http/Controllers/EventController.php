@@ -42,6 +42,7 @@ class EventController extends Controller
     public function store(Request $request)
     {
 
+        // dd($request->guest);
         $event = $request->validate([
             'name' => 'required',
             
@@ -51,9 +52,12 @@ class EventController extends Controller
         $event['slug'] = Str::slug($request->name, '-');
         // dd($request->slug);
         $newEvent = Event::create($event);
-        //dd($newEvent);
-        $guests = Guest::find($request->guest);
-        $newEvent->guests()->attach($guests);
+
+        foreach ($request->guest as $guest) {
+            $guests = Guest::find($guest);
+            $newEvent->guests()->attach($guests);
+        }
+        
 
         return redirect()->route('events.index')
                         ->with('success', 'Event created successfully');

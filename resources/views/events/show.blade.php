@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Show Event</h2>
+                <h2> {{ $event->name }}</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('events.index') }}"> Back</a>
@@ -15,7 +15,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <p>{{ $event->id }}</p>
-                <p>{{ $event->name }}</p>
+                
                 <p>{{ $event->date }}</p>
                 <!-- <p>{{ $event->guest }}</p> -->
             </div>
