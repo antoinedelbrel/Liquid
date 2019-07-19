@@ -56,6 +56,45 @@
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <button id="bouton" class="btn btn-success">Add expences</button>
+
+            <table class="table" id="tableau">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        <th>
+                            Guest
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="newExpence">
+                        <td>
+                            <input class="name" type="text" name="name">
+                        </td>
+                        <td>
+                            <input class="price" type="number" name="price">
+                        </td>
+                        <td>
+                            @foreach ($guests as $guest)
+                            <input type="checkbox" value="{{ $guest->id }}" name="guest[]" id="case">
+                            <label for="guest">{{ $guest->name }}</label>
+                            @endforeach
+                        </td>
+                        <td>
+                            <button id="delete" class="btn btn-danger delete-task">-</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
    
 </form>

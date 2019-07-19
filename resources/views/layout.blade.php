@@ -22,7 +22,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <div id="logo_container">
-                      <a class="navbar-brand" href="events"><img class="logo" src="{{ asset('images/logo.png') }}" alt="logo"></a>
+                      <a class="navbar-brand" href="{{ route('events.index') }}"><img class="logo" src="{{ asset('images/logo.png') }}" alt="logo"></a>
 
                     </div>           
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                          <a class="lien nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+                          <a class="lien nav-link" href="login">Login <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="lien nav-link" href="#">Sign-up</a>
+                          <a class="lien nav-link" href="register">Register</a>
                         </li>
                         <li class="nav-item">
-                          <a class="lien nav-link " href="contact" tabindex="-1" aria-disabled="true">Contact</a>
+                          <a class="lien nav-link " href="{{ route('contact') }}" tabindex="-1" aria-disabled="true">Contact</a>
                         </li>
                       </ul>
                       
@@ -66,10 +66,10 @@
             <h3>Follow me</h3>
             <div class="reseaux">
               <ul>
-                <li> <a class="network" href="https://www.facebook.com/antoine.delbrel">facebook</a></li>
-                <li> <a class="network" href="https://twitter.com/AntoineDelbrel">twitter</a></li>
-                <li><a class="network" href="https://www.linkedin.com/in/antoine-delbrel-48621b181/">linkedin</a></li>
-                <li> <a class="network" href="https://github.com/antoinedelbrel/leakid">github</a></li>
+                <li> <a class="network"  href="https://www.facebook.com/antoine.delbrel" target="_blank">facebook</a></li>
+                <li> <a class="network" href="https://twitter.com/AntoineDelbrel" target="_blank">twitter</a></li>
+                <li><a class="network" href="https://www.linkedin.com/in/antoine-delbrel-48621b181/" target="_blank">linkedin</a></li>
+                <li> <a class="network" href="https://github.com/antoinedelbrel/leakid" target="_blank">github</a></li>
               </ul>
                
                

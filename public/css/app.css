@@ -128,7 +128,15 @@ h3 {
   background-color: #910949;
 }
 
+.btn-success {
+  background-color: #D94234;
+}
+
 .contact {
   padding-top: 100px;
+}
+
+.input {
+  background: none;
 }
 
