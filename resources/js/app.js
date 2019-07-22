@@ -31,7 +31,7 @@ const app = new Vue({
     el: '#app',
 });
 
-const newLine = document.getElementById('newExpence');
+/*const newLine = document.getElementById('newExpence');
 const tbody = document.querySelector('#tableau tbody');
 const bouton = document.getElementById('bouton');
 
@@ -66,7 +66,7 @@ bouton.addEventListener('click', function(event){
         
         tbody.appendChild(clone);
     }
-});
+});*/
 
 // const parentTr = getParentTr(event.target);
 // const prix = parentTr.querySelector('.price'); 
@@ -82,4 +82,3 @@ bouton.addEventListener('click', function(event){
 //         prix.innerHTML = 'error';
 //         return;
 //     }
-}
