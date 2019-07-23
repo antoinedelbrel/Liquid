@@ -32,10 +32,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                          <a class="lien nav-link" href="login">Login <span class="sr-only">(current)</span></a>
+                          <a class="lien nav-link" href="{{ route('login') }}">Login <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="lien nav-link" href="register">Register</a>
+                          <a class="lien nav-link" href="{{ route('register') }}">Register</a>
                         </li>
                         <li class="nav-item">
                           <a class="lien nav-link " href="{{ route('contact') }}" tabindex="-1" aria-disabled="true">Contact</a>

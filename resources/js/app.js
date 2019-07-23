@@ -31,54 +31,54 @@ const app = new Vue({
     el: '#app',
 });
 
-/*const newLine = document.getElementById('newExpence');
-const tbody = document.querySelector('#tableau tbody');
-const bouton = document.getElementById('bouton');
+// function getParentTr(element){
+//     return element.parentNode.parentNode;
+// }
 
-const table = document.getElementById('tableau');
-// Ajouter une nouvelle ligne 
-bouton.addEventListener('click', function(event){
-    event.preventDefault();
+// const newLine = document.getElementById('newExpence');
+// const tbody = document.querySelector('#tableau tbody');
+// const bouton = document.getElementById('bouton');
 
-    const lastTr = table.rows[table.rows.length - 1];
+// const table = document.getElementById('tableau');
+// // Ajouter une nouvelle ligne 
+// bouton.addEventListener('click', function(event){
+//     event.preventDefault();
 
-    const allInput = lastTr.querySelectorAll('input');
-    let inputError = false;
+//     const lastTr = table.rows[table.rows.length - 1];
+
+//     const allInput = lastTr.querySelectorAll('input');
+//     let inputError = false;
     
-    allInput.forEach(element => {
+//     allInput.forEach(element => {
 
-        if(element.value == "" || element.classList.contains('isInvalid')){
-            inputError = true;
-            element.classList.add('idInvalid');
-        }
-    });
+//         if(element.value == "" || element.classList.contains('isInvalid')){
+//             inputError = true;
+//             element.classList.add('isInvalid');
+//         }
+//     });
 
-    if(!inputError){
+//     if(!inputError){
 
-        let clone = newLine.cloneNode(true);
+//         let clone = newLine.cloneNode(true);
    
 
-        const inputList = newLine.querySelectorAll('input');
+//         const inputList = newLine.querySelectorAll('input');
 
-        inputList.forEach(element => {
-            element.value = "";
-        });
+//         inputList.forEach(element => {
+//             element.value = "";
+//         });
         
-        tbody.appendChild(clone);
-    }
-});*/
-
-// const parentTr = getParentTr(event.target);
-// const prix = parentTr.querySelector('.price'); 
-
-// // Changement dans un input qui a la class price
-// if(event.target.classList.contains('price')){
-
-//     event.target.classList.remove('isInvalid');
-
-//     let price = event.target.value;
-
-//     if(price < 0){
-//         prix.innerHTML = 'error';
-//         return;
+//         tbody.appendChild(clone);
 //     }
+// });
+
+
+
+// document.addEventListener('click', function(event){
+//     event.preventDefault();
+
+//     if(event.target.classList.contains('delete-expences')){
+
+//         getParentTr(event.target).remove();
+//     }
+// });

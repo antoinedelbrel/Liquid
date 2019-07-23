@@ -11,27 +11,27 @@
                 <p>{{ $message }}</p>
             </div>
         @endif -->
-        <div id="back">
+        <div id="back ">
             <img src="{{ asset('images/soiree.png') }}" class="soiree card-img mb-left" alt="soiree">
             <div class="box col-12 col-md-6 card-img-overlay form-group">
                 <form class="contact form-horizontal" method="POST" action="/contact">
                     {{ csrf_field() }} 
                     @csrf
                     <div class="inputBox form-group card-text">
-                        <label for="Name">Name</label>
-                        <input type="text" class="input form-control" id="name" name="name" required>
+                        <label for="Name"></label>
+                        <input type="text" class="input form-control" placeholder="Nom" id="name" name="name" required >
                     </div>
                     <div class="inputBox form-group card-text">
-                        <label for="email">Email</label>
-                        <input type="text" class="input form-control " id="email" name="email" required>
+                        <label for="email"></label>
+                        <input type="email" class="input form-control" placeholder="Email" id="email" name="email" required >
                     </div>
                     <div class="inputBox form-group card-text">
-                        <label for="Objet">Objet</label>
-                        <input type="text" class="input form-control " id="objet" name="objet" required>
+                        <label for="Objet"></label>
+                        <input type="text" class="input form-control" placeholder="Objet" id="objet" name="objet" required >
                     </div>
                     <div class="inputBox form-group card-text">
-                        <label for="message">Message</label>
-                        <input type="text" class="input form-control luna-message" id="message" name="message" required>
+                        <label for="message"></label>
+                        <input type="text" class="input form-control luna-message" placeholder="Message" id="message" name="message" required >
                     </div>
                     <div class="form-group card-text">
                         <button type="submit" class="btn btn-primary" value="Send">Send</button>

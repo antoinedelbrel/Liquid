@@ -30,31 +30,20 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" class="form-control" placeholder="Email">
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <label for="events">Events:</label>
-                <!-- <select name="guest" id="guest">  -->
-                    @foreach ($events as $event)
-                    <!-- <option value="{{ $guest->id }}">{{ $guest->name }}</option> -->
-                    
-                    <input type="checkbox" value="{{ $event->id }}" name="event[]" id="case" checked="checked" > 
-                    <label for="event">{{ $event->name }}</label> 
-                    @endforeach 
-                <!-- </select>  -->
+                <input type="text" id="email" name="email" class="form-control" placeholder="Email" required>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        
+       
     </div>
    
 </form>
