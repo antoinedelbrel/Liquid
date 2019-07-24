@@ -29,7 +29,11 @@
                         @foreach ($event->guests as $guest)
                         <tr>
                             <td>{{ $guest->name }}</td>
-                            
+                        </tr>
+                        @endforeach
+                        @foreach ($event->expences as $expence)
+                        <tr>
+                            <td>{{ $expence->name }}</td>
                         </tr>
                         @endforeach
                     </tbody>

@@ -23,16 +23,13 @@ nav{
     align-items:center;
     padding:1rem 0;
 }
-
 .logo{
     width:40%;
 }
-
 #menu ul{
     display:flex;
     margin:0;
 }
-
 li{
     position:relative;
     list-style:none;
@@ -65,17 +62,17 @@ li{
 }
 #content{
     padding: 50px 0;
-    
+    flex:1;
 }
-#content:after{
-    content:"";
-    display: block;
+#parent{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
-footer, #content:after{
-   height:142px;
+footer{
+    width:100%;
 }
 #footer{
-    
     padding:30px 0;
     background-image:url(./rectangle.png);
 }
@@ -196,42 +193,111 @@ h3{
 //     padding-top:100px;
 // }
 
+#contain{
+    margin:0;
+    padding:0;
+    background-size:cover;
+}
 .box{
     position:absolute;
-    top:50%;
+    bottom:50%;
+    // top:40%;
     left:50%;
-    transform: translate(-50%, -50%);
-    width:30rem;
-    padding:2.5rem;
+    transform: translate(-50%, 50%);
+    width: 25rem;
+    padding: 2.5rem;
     box-sizing:border-box;
-    background:rgba(0,0,0,0.6);
-    border-radius: 0.625rem;
+//     background: rgba(0, 0, 0, 0.5);
+//     border-radius: 0.625rem;
+}
+.box h1{
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
 }
 .box .inputBox{
-    position:relative;
+    position: relative;
 }
-.box .inputBox .input{
+.box .inputBox input{
     width: 100%;
     padding: 0.625rem 0;
     font-size: 1rem;
-    color:#fff;
+    color: #fff;
     letter-spacing: 0.062rem;
     margin-bottom: 1.875rem;
-    border:none;
+    border: none;
     border-bottom: 0.065rem solid #fff;
-    outline:none;
+    outline: none;
     background: transparent;
 }
 .box .inputBox label{
-    position:absolute;
-    top:0;
-    left:0;
-    // padding: 0.625rem 0;
-    font-size:1rem;
-    color:#fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #fff;
     pointer-events: none;
     transition: 0.5s;
 }
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox input:not([value=""]) ~ label{
+    top: -1.125rem;
+    left: 0;
+    color: #C93C37;
+    font-size: 0.75rem;
+}
+.box input[type="submit"]{
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #03a9f4;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+}
+.box input[type="submit"]:hover{
+    background-color: #C93C37;
+}
+// .box{
+//     position:absolute;
+//     top:50%;
+//     left:50%;
+//     transform: translate(-50%, -50%);
+//     width:30rem;
+//     padding:2.5rem;
+//     box-sizing:border-box;
+//     background:rgba(0,0,0,0.6);
+//     border-radius: 0.625rem;
+// }
+// .box .inputBox{
+//     position:relative;
+// }
+// .box .inputBox .input{
+//     width: 100%;
+//     padding: 0.625rem 0;
+//     font-size: 1rem;
+//     color:#fff;
+//     letter-spacing: 0.062rem;
+//     margin-bottom: 1.875rem;
+//     border:none;
+//     border-bottom: 0.065rem solid #fff;
+//     outline:none;
+//     background: transparent;
+// }
+// .box .inputBox label{
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     // padding: 0.625rem 0;
+//     font-size:1rem;
+//     color:#fff;
+//     pointer-events: none;
+//     transition: 0.5s;
+// }
 
 // .box .input[type="submit"]{
 //     border: none;

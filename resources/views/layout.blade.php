@@ -17,7 +17,7 @@
         <title>LIQUID</title>
     </head>
     <body>
-    
+      <div id="parent">
         <div id="header" class="bg-light">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light ">
@@ -66,7 +66,7 @@
             </div>
         </div>
       </footer>  
-        
+      </div>  
 
         
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

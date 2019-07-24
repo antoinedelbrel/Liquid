@@ -12,4 +12,7 @@ class Event extends Model
     public function guests(){
         return $this->belongsToMany('App\Guest');
     }
+    public function expences(){
+        return $this->hasMany('App\Expence');
+    }
 }

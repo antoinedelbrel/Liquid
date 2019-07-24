@@ -31,6 +31,7 @@ const app = new Vue({
     el: '#app',
 });
 
+
 // function getParentTr(element){
 //     return element.parentNode.parentNode;
 // }

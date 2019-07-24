@@ -12,4 +12,7 @@ class Expence extends Model
     public function guests(){
         return $this->belongsTo('App\Guest');
     }
+    public function events(){
+        return $this->belongsTo('App\Event');
+    }
 }

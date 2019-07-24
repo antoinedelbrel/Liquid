@@ -14,45 +14,44 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <p>{{ $guest->name }}</p>
+                
                 <p>{{ $guest->email }}</p>
             </div>
         </div>     
     </div>
+    <div id="recap">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <table class="table table-striped custab" id="tableau">
-                    <tbody>
-                    @foreach ($guest->expences as $expence)
-                        <tr>
-                            <td>
-                            {{ $expence->name }}
-                            {{ $expence->price }}
-                            </td>
-                        </tr>
-                    </tbody>
-                    @endforeach
-                </table>
-            </div>
-        </div>     
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <table class="table table-striped custab" id="tableau">
-                    <tbody>
-                    @foreach ($guest->events as $event)
-                        <tr>
-                            <td>
-                            {{ $event->name }}
-                            {{ $event->date }}
-                            </td>
-                        </tr>
-                    </tbody>
-                    @endforeach
-                </table>
-            </div>
-        </div>     
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <table class="table table-striped custab" id="tableau">
+                        <thead>
+                        @foreach ($guest->events as $event)
+                            <tr class="text-center">
+                                <th>
+                                    {{ $event->name }}  
+                                </th>
+                                <th>
+                                    {{ $guest->name }}
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($guest->expences as $expence)
+                            <tr class="text-center">
+                                <td>
+                                    <p>{{ $event->date }}</p>
+                                </td>
+                                <td>
+                                    <p>{{ $expence->name }}</p>
+                                    <P>{{ $expence->price }}</P>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                        @endforeach
+                    </table>
+                </div>
+            </div>     
+        </div>
     </div>
 @endsection
