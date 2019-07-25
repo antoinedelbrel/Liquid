@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Guest;
 use App\Guest_Event;
+use App\Expence;
 
 class EventController extends Controller
 {

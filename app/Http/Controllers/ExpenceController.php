@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Expence;
 use Illuminate\Http\Request;
 use App\Guest;
+use App\Event;
 
 class ExpenceController extends Controller
 {
@@ -28,7 +29,9 @@ class ExpenceController extends Controller
     public function create()
     {
         $guests = Guest::all();
-        return view('expences.create', compact('guests'));
+        $events = Event::all();
+        
+        return view('expences.create', compact('guests','events'));
     }
 
     /**
@@ -43,6 +46,7 @@ class ExpenceController extends Controller
             'name' => 'required',
             'price' => 'required',
             'guest_id' => 'required',
+            'event_id' => 'required',
         ]);
         Expence::create($request->all());
 
@@ -85,6 +89,7 @@ class ExpenceController extends Controller
             'name' => 'required',
             'price' => 'required',
             'guest_id' => 'required',
+            'event_id' => 'required',
         ]);
         Expence::updated($request->all());
 

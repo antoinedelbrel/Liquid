@@ -18,6 +18,7 @@ class CreateExpencesTable extends Migration
             $table->string('name');
             $table->integer('price');
             $table->unsignedInteger('guest_id');
+            $table->unsignedInteger('event_id');
             $table->timestamps();
         });
     }

@@ -2,7 +2,7 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="pull-left text-center">
                 <h2> {{ $event->name }}</h2>
             </div>
             <div class="pull-right">
@@ -17,27 +17,31 @@
                 <p>{{ $event->id }}</p>
                 
                 <p>{{ $event->date }}</p>
-                <!-- <p>{{ $event->guest }}</p> -->
+                
             </div>
         </div>            
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <table class="table table-striped custab" id="tableau">
-                    <tbody>
-                        @foreach ($event->guests as $guest)
-                        <tr>
-                            <td>{{ $guest->name }}</td>
-                        </tr>
+              
+                <div class="guest">
+                    @foreach ($event->guests as $guest)
+                        <p>{{ $guest->name }}</p>
+                        @foreach ($guest->expences as $expence)
+                        
+                            @if ($expence->event_id == $event->id)
+                            <p>{{ $expence->name }} {{ $expence->price }}</p>
+                            @endif
+                            
                         @endforeach
-                        @foreach ($event->expences as $expence)
-                        <tr>
-                            <td>{{ $expence->name }}</td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
+                    @endforeach
+                </div>
+                <!-- <div id="expence">
+                    @foreach ($event->expences as $expence)
+                        <p>{{ $expence->name }} {{ $expence->price }} </p>
+                    @endforeach
+                </div> -->
             </div>
         </div>            
     </div>

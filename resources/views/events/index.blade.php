@@ -1,6 +1,9 @@
 @extends('layout')
  
 @section('content')
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+Ea, consectetur cum odit sit quisquam itaque dolore ratione assumenda autem. 
+Quasi laboriosam veritatis velit a accusamus reiciendis animi ea sunt ab?</p>
     <div class="row">
         <div class="col-lg-12 margin-tb d-flex justify-content-between mb-2">
             <div class="pull-left">

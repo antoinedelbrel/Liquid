@@ -173,6 +173,11 @@ h3 {
   background-color: #D94234;
 }
 
+.guest {
+  display: flex;
+  justify-content: space-around;
+}
+
 #contain {
   margin: 0;
   padding: 0;

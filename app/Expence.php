@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Expence extends Model
 {
     protected $fillable = [
-        'name', 'price', 'guest_id'
+        'name', 'price', 'guest_id', 'event_id'
     ];
     public function guests(){
         return $this->belongsTo('App\Guest');

@@ -25,6 +25,7 @@
             <th>Name</th>
             <th>Price</th>
             <th>Guest id</th>
+            <th>Event id</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($expences as $expence)  
@@ -33,6 +34,8 @@
             <td>{{ $expence->name }}</td>
             <td>{{ $expence->price }}</td>
             <td>{{ $expence->guest_id }}</td>
+            <td>{{ $expence->event_id }}</td>
+            
             <td>
                 <form action="{{ route('expences.destroy',$expence->id) }}" method="POST">
    
