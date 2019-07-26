@@ -86,7 +86,9 @@ class GuestController extends Controller
             'name' => 'required',
             'email' => 'required',
         ]);
-        Guest::updated($request->all());
+
+        $guest->update($request->all());
+        // Guest::updated($request->all());
 
         return redirect()->route('guests.index')
                         ->with('success','Guest updated successfully');

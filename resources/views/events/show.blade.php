@@ -25,7 +25,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
               
-                <div class="guest">
+                <div class="event">
                     @foreach ($event->guests as $guest)
                         <p>{{ $guest->name }}</p>
                         @foreach ($guest->expences as $expence)

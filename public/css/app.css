@@ -173,9 +173,14 @@ h3 {
   background-color: #D94234;
 }
 
-.guest {
+.event {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+#events {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #contain {

@@ -23,17 +23,21 @@
     <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="guest form-group">
-                    <div id="event">
+                    <div id="events">
                         @foreach ($guest->events as $event)
                             <p> {{ $event->name }} </p>
-                            
+                            @foreach ($event->expences as $expence)
+                                @if ($expence->guest_id == $guest->id)
+                                <p> {{ $expence->name }} {{ $expence->price}} </p>
+                                @endif
+                            @endforeach    
                         @endforeach
                     </div>   
-                    <div id="expence">
+                    <!-- <div id="expence">
                         @foreach ($guest->expences as $expence)
                             <p> {{ $expence->name }} {{ $expence->price }}</p>
                         @endforeach
-                    </div>
+                    </div> -->
                 </div>
             </div>     
         </div>

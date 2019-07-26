@@ -101,7 +101,9 @@ class EventController extends Controller
             'date' => 'required',   
             
         ]);
-        Event::updated($request->all());
+        
+        $event->update($request->all());
+        // Event::updated($request->all());
 
         return redirect()->route('events.index')
                         ->with('success', 'Event updated successfully');

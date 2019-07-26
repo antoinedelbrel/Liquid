@@ -91,7 +91,9 @@ class ExpenceController extends Controller
             'guest_id' => 'required',
             'event_id' => 'required',
         ]);
-        Expence::updated($request->all());
+
+        $expence->update($request->all());
+        // Expence::updated($request->all());
 
         return redirect()->route('expences.index')
                         ->with('success', 'Expence updated successfully');

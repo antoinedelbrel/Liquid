@@ -32,6 +32,9 @@ const app = new Vue({
 });
 
 
+
+
+
 // function getParentTr(element){
 //     return element.parentNode.parentNode;
 // }
