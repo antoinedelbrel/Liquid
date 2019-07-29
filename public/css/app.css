@@ -175,12 +175,18 @@ h3 {
 
 .event {
   display: flex;
-  justify-content: space-evenly;
+  text-align: center;
+  justify-content: space-around;
 }
 
 #events {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contact {
+  position: static;
 }
 
 #contain {

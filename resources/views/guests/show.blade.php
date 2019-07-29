@@ -25,12 +25,13 @@
                 <div class="guest form-group">
                     <div id="events">
                         @foreach ($guest->events as $event)
-                            <p> {{ $event->name }} </p>
-                            @foreach ($event->expences as $expence)
-                                @if ($expence->guest_id == $guest->id)
-                                <p> {{ $expence->name }} {{ $expence->price}} </p>
-                                @endif
-                            @endforeach    
+                            <div> {{ $event->name }} 
+                                @foreach ($event->expences as $expence)
+                                    @if ($expence->guest_id == $guest->id)
+                                <div> {{ $expence->name }} {{ $expence->price}} </div>
+                                    @endif
+                                @endforeach   
+                            </div>     
                         @endforeach
                     </div>   
                     <!-- <div id="expence">
