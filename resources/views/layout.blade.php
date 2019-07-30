@@ -25,7 +25,7 @@
                       <a class="navbar-brand" href="{{ route('events.index') }}"><img class="logo" src="{{ asset('images/logo.png') }}" alt="logo"></a>
 
                     </div>           
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="bouton navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -41,7 +41,6 @@
                           <a class="lien nav-link " href="{{ route('contact') }}" tabindex="-1" aria-disabled="true">Contact</a>
                         </li>
                       </ul>
-                      
                     </div>
                 </nav>
             </div>
@@ -50,25 +49,29 @@
 
 
 
-      <div id="content">
-          <div class="container">
-            
-          @yield('content')
-          </div>
-      </div>
-
-      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-      <footer>
-        <div id="footer">
-            <h3>Follow me</h3>
-            <div class="reseaux rounded-social-buttons">
-              <a class="network social-button facebook"  href="https://www.facebook.com/antoine.delbrel" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a class="network social-button twitter" href="https://twitter.com/AntoineDelbrel" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a class="network social-button linkedin" href="https://www.linkedin.com/in/antoine-delbrel-48621b181/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a class="network social-button github" href="https://github.com/antoinedelbrel/leakid" target="_blank"><i class="fab fa-github"></i></a>               
+        <div id="content">
+            <div class="container">
+              
+            @yield('content')
             </div>
         </div>
-      </footer>  
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+        <footer>
+          <div id="footer">
+              <div id="copyright">
+                <img src="#" alt="copyright">
+                <p>antoinedelbrel</p>
+              </div>
+              <h3>Follow me</h3>
+              <div class="reseaux rounded-social-buttons">
+                <a class="network social-button facebook"  href="https://www.facebook.com/antoine.delbrel" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a class="network social-button twitter" href="https://twitter.com/AntoineDelbrel" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="network social-button linkedin" href="https://www.linkedin.com/in/antoine-delbrel-48621b181/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="network social-button github" href="https://github.com/antoinedelbrel/leakid" target="_blank"><i class="fab fa-github"></i></a>               
+              </div>
+          </div>
+        </footer>  
       </div>  
 
         

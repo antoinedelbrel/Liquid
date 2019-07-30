@@ -2,9 +2,8 @@
 
 @section('content')
     <div id="contain" class="card bg-dark text-white">
-    <img src="{{ asset('images/soiree.png') }}" class="soiree card-img mb-left" alt="soiree">
-        <div class="box col-12 col-md-6 card-img-overlay form-group">
-            <h1 class="mb-2 text-center card-title">Contact Us</h1>
+        <div class="box ">
+            <h1 class="title mb-2 text-center card-title">Contact Us</h1>
             <form class="contact form-horizontal" method="POST" action="/contact">
                 {{ csrf_field() }} 
                 @csrf

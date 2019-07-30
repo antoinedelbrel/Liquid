@@ -6,28 +6,25 @@
 #header {
   border-bottom: 1px solid #ccc;
   box-shadow: 0px 0px 14px 0px rgba(184, 131, 124, 0.4);
-}
-
-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+  width: 100%;
 }
 
 .logo {
   width: 40%;
 }
 
-#menu ul {
-  display: flex;
-  margin: 0;
-}
-
 li {
   position: relative;
   list-style: none;
   margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 .lien {
@@ -185,10 +182,6 @@ h3 {
   text-align: center;
 }
 
-.contact {
-  position: static;
-}
-
 #contain {
   margin: 0;
   padding: 0;
@@ -196,12 +189,9 @@ h3 {
 }
 
 .box {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 25rem;
-  padding: 2.5rem;
+  position: unset;
+  width: 40%;
+  padding: 9.5rem 0;
   box-sizing: border-box;
 }
 
@@ -262,5 +252,14 @@ h3 {
 
 .box input[type=submit]:hover {
   background-color: #C93C37;
+}
+
+#contain {
+  background-image: url(/images/soiree.png?c9466da64205ea4c2053a7d9e3dedea6);
+  background-position: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 

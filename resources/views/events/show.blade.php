@@ -1,12 +1,13 @@
 @extends('layout')
 @section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left text-center">
+    <div class="menu row">
+        <div class="menu col-lg-12 margin-tb">
+            <div class="pull-left text-left">
                 <h2> {{ $event->name }}</h2>
+                <p>{{ $event->date }}</p>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('events.index') }}"> Back</a>
+                <a class="btn btn-primary text-right" href="{{ route('events.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -15,8 +16,6 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <p>{{ $event->id }}</p>
-                
-                <p>{{ $event->date }}</p>
                 
             </div>
         </div>            
@@ -27,7 +26,7 @@
               
                 <div class="row event">
                     @foreach ($event->guests as $guest)
-                        <div class="guest">{{ $guest->name }}
+                        <div class="guest"><strong>{{ $guest->name }}</strong>
                               
                             @foreach ($guest->expences as $expence)
                                 
