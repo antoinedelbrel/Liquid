@@ -1,7 +1,7 @@
 @extends('layout')
  
 @section('content')
-    <div class="row">
+    <div class="depense">
         <div class="col-lg-12 margin-tb d-flex justify-content-between mb-2">
             <div class="pull-left">
                 <h2>Expence</h2>

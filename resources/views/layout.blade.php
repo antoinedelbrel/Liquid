@@ -50,26 +50,29 @@
 
 
         <div id="content">
-            <div class="container">
+       
               
-            @yield('content')
-            </div>
+              @yield('content')
+           
+       
+           
         </div>
 
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
         <footer>
           <div id="footer">
               <div id="copyright">
-                <img src="#" alt="copyright">
-                <p>antoinedelbrel</p>
+                <p>© Copyright antoinedelbrel</p>
               </div>
-              <h3>Follow me</h3>
-              <div class="reseaux rounded-social-buttons">
-                <a class="network social-button facebook"  href="https://www.facebook.com/antoine.delbrel" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a class="network social-button twitter" href="https://twitter.com/AntoineDelbrel" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="network social-button linkedin" href="https://www.linkedin.com/in/antoine-delbrel-48621b181/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a class="network social-button github" href="https://github.com/antoinedelbrel/leakid" target="_blank"><i class="fab fa-github"></i></a>               
-              </div>
+              <div id="reseau">
+                <h3>Follow me</h3>
+                <div class="reseaux rounded-social-buttons">
+                  <a class="network social-button facebook"  href="https://www.facebook.com/antoine.delbrel" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a class="network social-button twitter" href="https://twitter.com/AntoineDelbrel" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a class="network social-button linkedin" href="https://www.linkedin.com/in/antoine-delbrel-48621b181/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a class="network social-button github" href="https://github.com/antoinedelbrel/leakid" target="_blank"><i class="fab fa-github"></i></a>        
+                </div>
+              </div>  
           </div>
         </footer>  
       </div>  

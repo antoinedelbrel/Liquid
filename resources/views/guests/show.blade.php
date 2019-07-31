@@ -1,46 +1,42 @@
 @extends('layout')
 @section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left text-center">
-                <h2> {{ $guest->name }} </h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('guests.index') }}"> Back</a>
+    <div class="parents">
+        <div class="container">
+            <div class="menu col-lg-12 margin-tb">
+                <div class="pull-left text-center">
+                    <h2> {{ $guest->name }} </h2>
+                    <span>{{ $guest->email }}</span>
+                </div>
+                <div class="pull-right">
+                    <a class="btn btn-primary text-right" href="{{ route('guests.index') }}"> Back</a>
+                </div>
             </div>
         </div>
     </div>
    
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                
-                <p>{{ $guest->email }}</p>
+    <div class="contenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <div class="row event">
+                            @foreach ($guest->events as $event)
+                                <div class="guest"> <strong>{{ $event->name }}</strong> 
+                                    <div class="expence-container">
+                                        @foreach ($event->expences as $expence)
+                                            <div class="expence-inner">
+                                                @if ($expence->guest_id == $guest->id)
+                                                    <div class="expence"> {{ $expence->name }} {{ $expence->price}} </div>
+                                                @endif
+                                            </div>
+                                        @endforeach   
+                                    </div>
+                                </div>     
+                            @endforeach
+                        </div>   
+                    </div>
+                </div>     
             </div>
-        </div>     
-    </div>
-    <div id="recap">
-    <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="guest form-group">
-                    <div id="events">
-                        @foreach ($guest->events as $event)
-                            <div> {{ $event->name }} 
-                                @foreach ($event->expences as $expence)
-                                    @if ($expence->guest_id == $guest->id)
-                                <div> {{ $expence->name }} {{ $expence->price}} </div>
-                                    @endif
-                                @endforeach   
-                            </div>     
-                        @endforeach
-                    </div>   
-                    <!-- <div id="expence">
-                        @foreach ($guest->expences as $expence)
-                            <p> {{ $expence->name }} {{ $expence->price }}</p>
-                        @endforeach
-                    </div> -->
-                </div>
-            </div>     
         </div>
     </div>
 @endsection
