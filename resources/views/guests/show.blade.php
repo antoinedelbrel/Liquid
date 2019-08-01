@@ -21,7 +21,10 @@
                     <div class="form-group">
                         <div class="row event">
                             @foreach ($guest->events as $event)
-                                <div class="guest"> <strong>{{ $event->name }}</strong> 
+                                <div class="guest">
+                                    <div class="invite">
+                                        <strong>{{ $event->name }}</strong> 
+                                    </div>
                                     <div class="expence-container">
                                         @foreach ($event->expences as $expence)
                                             <div class="expence-inner">

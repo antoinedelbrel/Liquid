@@ -1,13 +1,15 @@
 @extends('layout')
   
 @section('content')
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Add New Event</h2>
-        </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('events.index') }}"> Back</a>
+<div class="parents">
+    <div class="container">
+        <div class="menu col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2>Add New Event</h2>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('events.index') }}"> Back</a>
+            </div>
         </div>
     </div>
 </div>
@@ -26,7 +28,7 @@
 <form action="{{ route('events.store') }}" method="POST">
     @csrf
   
-     <div class="row">
+    <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="name">Name:</label>

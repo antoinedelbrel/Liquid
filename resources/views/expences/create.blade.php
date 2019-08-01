@@ -1,17 +1,18 @@
 @extends('layout')
   
 @section('content')
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Add New Expence</h2>
-        </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('expences.index') }}"> Back</a>
+    <div class="parents">
+        <div class="container">
+            <div class="menu col-lg-12 margin-tb">
+                <div class="pull-left">
+                    <h2>Add New Expence</h2>
+                </div>
+                <div class="pull-right">
+                    <a class="btn btn-primary" href="{{ route('expences.index') }}"> Back</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-   
 @if ($errors->any())
     <div class="alert alert-danger">
         <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -26,7 +27,7 @@
 <form action="{{ route('expences.store') }}" method="POST">
     @csrf
   
-     <div class="row">
+    <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="name">Name:</label>
