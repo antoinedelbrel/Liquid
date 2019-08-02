@@ -29,12 +29,12 @@
                     <th width="280px">Action</th>
                 </tr>
                 @foreach ($guests as $guest)  
-                <tr>
+                <tr class="info">
                     <td>{{ $guest->id }}</td>
                     <td>{{ $guest->name }}</td>
                     <td>{{ $guest->email }}</td>
                     <td>
-                        <form action="{{ route('guests.destroy',$guest->id) }}" method="POST">
+                        <form class="formulaire" action="{{ route('guests.destroy',$guest->id) }}" method="POST">
         
                             <a class="btn btn-info" href="{{ route('guests.show',$guest->id) }}">Show</a>
             

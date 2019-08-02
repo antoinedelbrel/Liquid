@@ -3,23 +3,18 @@
     <div class="parents">
         <div class="container">
 
-<!-- Faire une div pour chaque elements du parents, une pour le menu, une pour la barre de recherche,
-et une pour le bouton back c'est a dire la partie droite. Mettre en display flex le tout avec un justify-content etc... 
-et bien sur le mettre en responsive avec des media queries. -->
-
             <div class="menu margin-tb">
-                <div class="pull-left text-left">
+                <div class="gauche pull-left text-left">
                     <h2 class="titre"> {{ $event->name }}</h2>
                     <span>{{ $event->date }}</span>
                 </div>
-                <div class="droite pull-right">
-                    
-                    <div class="recherche">
-                        <input type="text" class="searchTerm" >
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
+                <div class="recherche">
+                    <input type="text" class="searchTerm" >
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="droite pull-right"> 
                     <a class="btn btn-primary " href="{{ route('events.index') }}"> Back</a>
                 </div>
             </div>

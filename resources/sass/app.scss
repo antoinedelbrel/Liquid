@@ -86,23 +86,10 @@ left: 0;
 .menu{
     display:flex;
     justify-content: space-between;
-}
-
-.droite{
-    width:100%;
-    display: flex;
-    justify-content:space-evenly;
     align-items: center;
 }
 
-@media(max-width:540px){
-    .droite{
-        flex-direction:column;
-    }
-    .recherche{
-        display:flex;
-    }
-}
+
 
 @media(max-width:460px){
     .titre{
@@ -118,6 +105,12 @@ left: 0;
     border-radius: 5px;
     outline: none;
     color: #9DBFAF;
+}
+
+@media(max-width: 321px){
+    .searchTerm{
+        width: 113px; 
+    }
 }
 
 .searchTerm:focus{
@@ -176,6 +169,20 @@ flex-direction: column;
     text-align: center;
     justify-content: space-around;
 }
+
+@media(max-width:488px){
+    .info{
+        font-size:13px;
+    }
+}
+
+@media(max-width:412px){
+    .info {
+        font-size: 10px;
+    }
+}
+
+
 
 footer {
 width: 100%;
