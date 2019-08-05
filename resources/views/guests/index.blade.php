@@ -50,7 +50,7 @@
                 @endforeach
             </table>
         
-            <a class="btn btn-info" href="expences">Add expences</a>
+            <a class="btn btn-info" href="{{ route('expences.index') }}">Add expences</a>
         </div>
     </div>
 @endsection

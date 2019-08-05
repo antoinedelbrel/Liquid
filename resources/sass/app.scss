@@ -51,7 +51,7 @@ background: none repeat scroll 0 0 transparent;
 bottom: 0;
 content: "";
 display: block;
-height: 2px;
+height: 1.5px;
 left: 50%;
 position: absolute;
 background: black;
@@ -147,6 +147,8 @@ flex-direction: column;
 
 .invite{
     background:#201E5B;
+    border-radius:5px;
+    width: 100%; 
     color:#fff;
 }
 
@@ -314,7 +316,11 @@ background-color: #910949;
 background-color: #D94234;
 }
 
-
+@media(max-width:330px){
+    .table{
+        max-width: 20px;
+    }
+}
 
 // #events {
 // display: flex;

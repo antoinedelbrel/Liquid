@@ -38,7 +38,7 @@ li {
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 1.5px;
   left: 50%;
   position: absolute;
   background: black;
@@ -128,6 +128,8 @@ li {
 
 .invite {
   background: #201E5B;
+  border-radius: 5px;
+  width: 100%;
   color: #fff;
 }
 
@@ -287,6 +289,12 @@ h3 {
 
 .btn-success {
   background-color: #D94234;
+}
+
+@media (max-width: 330px) {
+  .table {
+    max-width: 20px;
+  }
 }
 
 #contain {

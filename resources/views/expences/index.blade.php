@@ -55,7 +55,7 @@
                 @endforeach
             </table>
             
-            <a class="btn btn-info" href="guests">Add guest</a>
+            <a class="btn btn-info" href="{{ route('guests.index') }}">Add guest</a>
         </div>
     </div>  
 @endsection
