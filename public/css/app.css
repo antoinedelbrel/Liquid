@@ -128,7 +128,7 @@ li {
 
 .invite {
   background: #201E5B;
-  border-radius: 5px;
+  border-radius: 4px;
   width: 100%;
   color: #fff;
 }
@@ -289,12 +289,6 @@ h3 {
 
 .btn-success {
   background-color: #D94234;
-}
-
-@media (max-width: 330px) {
-  .table {
-    max-width: 20px;
-  }
 }
 
 #contain {

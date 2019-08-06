@@ -1,4 +1,4 @@
-# Appli Leakid
+# Appli Liquid
 
 # Cahier des charges 
 
@@ -14,7 +14,8 @@
     * id  
     * name  
     * price  
-    * user_id  
+    * guest_id
+    * event_id  
     * created_at  
     * updated_at  
 
@@ -26,11 +27,15 @@
     * created_at  
     * updated_at  
 
-* Guest_Event :   
+* Guest_Event :
+    * id
     * id_guest  
     * id_event  
+    * created_at
+    * updated_at
 
-## Commandes utiliser 
+
+## Commandes utilisées 
 Installation de laravel avec composer
 * `laravel new` On crée un nouveau dossier laravel.
 * `npm install` On installe les modules necessaires pour javascript et css.
@@ -48,11 +53,12 @@ Installation de laravel avec composer
 Projet d'application qui récapitule qui apporte quoi à un évenement, pour avoir le total de dépenses, le total de nourritures, de boissons...  
 Reflexion sur le nom de l'application.
 Differend nom proposé : LeakId, Liquid.  
+Nom gardé : Liquid.
  
 
 ## Partie dev
 
-* Création de chaque page Model View Controller (MVC) pour toutes les tables.
+* Création de chaque page MVC (Model View Controller) pour toutes les tables.
 
 
 ## Partie design 
@@ -60,3 +66,5 @@ Differend nom proposé : LeakId, Liquid.
 * Ajout du logo. 
 * Ajout de la couleur de font.
 * Design de la page d'accueil.
+* Design de chaque page.
+* Responsive pour chaque écran (ordinateur, tablette, portable).
