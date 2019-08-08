@@ -46,9 +46,9 @@ class EventController extends Controller
         // dd($request->guest);
         $event = $request->validate([
             'name' => 'required',
-            
+
             'date' => 'required',
-            
+
         ]);
         $event['slug'] = Str::slug($request->name, '-');
         // dd($request->slug);
@@ -58,10 +58,10 @@ class EventController extends Controller
             $guests = Guest::find($guest);
             $newEvent->guests()->attach($guests);
         }
-        
+
 
         return redirect()->route('events.index')
-                        ->with('success', 'Event created successfully');
+            ->with('success', 'Event created successfully');
     }
 
     /**
@@ -97,16 +97,16 @@ class EventController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            
-            'date' => 'required',   
-            
+
+            'date' => 'required',
+
         ]);
-        
+
         $event->update($request->all());
         // Event::updated($request->all());
 
         return redirect()->route('events.index')
-                        ->with('success', 'Event updated successfully');
+            ->with('success', 'Event updated successfully');
     }
 
     /**
@@ -120,6 +120,6 @@ class EventController extends Controller
         $event->delete();
 
         return redirect()->route('events.index')
-                        ->with('success', 'Event delete successfully');
+            ->with('success', 'Event delete successfully');
     }
 }

@@ -99,7 +99,7 @@ li {
 }
 
 .searchTerm:focus {
-  color: #7C1D5A;
+  color: black;
 }
 
 .searchButton {
