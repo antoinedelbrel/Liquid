@@ -60,7 +60,7 @@
       <div class="container">
         <div id="footer">
           <div id="copyright">
-            <p>© Copyright antoinedelbrel</p>
+            <p><a class="c" href="#">©</a> antoinedelbrel</p>
           </div>
           <div id="reseau">
             <h3>Follow me</h3>
